@@ -1,0 +1,30 @@
+{
+  "name": "react-starter",
+  "version": "1.0.0",
+  "description": "A minimalist latest version react and react-router skeleton, an exploration for personal use",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify src/main.js -t babelify --outfile public/js/bundle.js && node-sass --output-style compressed styles/main.scss public/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awebfactory/react-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/awebfactory/react-starter/issues"
+  },
+  "homepage": "https://github.com/awebfactory/react-starter#readme",
+  "dependencies": {
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-router": "^1.0.0-rc3"
+  },
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "node-sass": "^3.3.3"
+  }
+}
