@@ -9,7 +9,7 @@ class Menu extends React.Component {
             <nav className="navbar navbar-inverse">
                 <div className="container-fluid">
                     <ul className="nav navbar-nav">
-                        <li><IndexLink to="/">Home</IndexLink></li>
+                        <li className="active"><IndexLink to="/">Home</IndexLink></li>
                         <li><Link to='/about'>About</Link></li>
                         <li><Link to='/docs'>Docs</Link></li>
                         <li><Link to='/contact'>Contact</Link></li>
