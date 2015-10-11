@@ -1,13 +1,13 @@
 import React from 'react';
 
-class Content extends React.Component {
+class Docs extends React.Component {
     render() {
         return (
             <div className="jumbotron awf-header">
-                {this.props.children}
+                <h1>react-starter Docs</h1>
             </div>
         );
     }
 }
 
-export default Content;
+export default Docs;
