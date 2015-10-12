@@ -22,6 +22,16 @@ npm install
 
 ### Development cycle involves:
 
+After install, one time:
+
+````
+mkdir public/js
+mkdir public/css
+npm run build
+````
+
+After any changes in the app
+
 ````
 npm run build
 ````
