@@ -41,6 +41,11 @@ npm run build
 ### Serve up from public/index.html to http://localhost:3000
 
 ````
-npm intall -g serve
-serve public
+npm start
+````
+
+which does the same as
+
+````
+node index.js
 ````
