@@ -3,11 +3,13 @@ A minimalist latest version react and react-router skeleton, an exploration for 
 
 ## Minimalist instructions
 
+This project attempts to document itself in the commit comments, so please review if interested.
+
 ### Global environment
 
 * Install [node](https://nodejs.org/en/)
     * We are assuming node 4.x.x, npm 2.x.x
-    * Recommendation: use `n`
+    * Recommendation on supporting OS: install [node binary manager `n`](https://github.com/tj/n)
         * `npm install -g n`
         * `n latest`
 * Install and configure [git](https://git-scm.com/book/en/v2)

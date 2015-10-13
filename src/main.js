@@ -4,10 +4,10 @@ import { Router, Route, IndexRoute } from 'react-router';
 import createBrowserHistory from 'history/lib/createBrowserHistory';
 
 import App from './components/app';
-import Home from './components/home';
-import About from './components/about';
-import Docs from './components/docs';
-import Contact from './components/contact';
+import Home from './components/home/home';
+import About from './components/about/about';
+import Docs from './components/docs/docs';
+import Contact from './components/contact/contact';
 
 let history = createBrowserHistory();
 
