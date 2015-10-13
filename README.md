@@ -3,7 +3,7 @@ A minimalist latest version react and react-router skeleton, an exploration for 
 
 ## Minimalist instructions
 
-This project attempts to document itself in the commit comments, so please review if interested.
+This project attempts to document itself in the commit comments (and related issues), so please review if interested.
 
 ### Global environment
 
