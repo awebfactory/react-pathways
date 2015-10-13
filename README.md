@@ -38,7 +38,7 @@ After any changes in the app
 npm run build
 ````
 
-### Serve up from public/index.html to http://localhost:3000
+### Serve up
 
 ````
 npm start
@@ -49,3 +49,7 @@ which does the same as
 ````
 node index.js
 ````
+
+Access app at `http://localhost:3000` or directly to, for example `http://localhost:3000/docs`.
+
+Try out incipient REST API at `http://localhost:3000/api/docs`.
