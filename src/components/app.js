@@ -2,6 +2,12 @@ import React from 'react';
 import Header from './home/header';
 
 class App extends React.Component {
+    componentDidMount() {
+      let theDocs = this.getDocs();
+      this.setState({
+        data: {theDocs}
+      })
+    }
     getDocs () {
       return [
               { title: 'title 1', body: 'body 1' },
@@ -10,7 +16,8 @@ class App extends React.Component {
             ]
     }
     render() {
-        let data = this.getDocs();
+        //let data = this.getDocs();
+        let data = this.state;
         return (
             <div className="container">
                 <Header />
