@@ -21,7 +21,7 @@ class App extends React.Component {
         return (
             <div className="container">
                 <Header />
-                {React.cloneElement(this.props.children, {docs: {data}})}
+                {React.cloneElement(this.props.children, {docs: data})}
             </div>
         );
     }
