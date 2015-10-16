@@ -2,19 +2,7 @@ import React from 'react';
 import Header from './home/header';
 
 class App extends React.Component {
-    componentDidMount() {
-      if (typeof state === "undefined") {
-        this.state = {};
-      }
-      this.state.data = {
-            docs: [
-              { title: 'title 1', body: 'body 1' },
-              { title: 'title 2', body: 'body 2' },
-              { title: 'title 3', body: 'body 3' }
-            ]
-      }
-    }
-    theDocs () {
+    getDocs () {
       return {
 
             docs: [
@@ -25,7 +13,7 @@ class App extends React.Component {
       }
     }
     render() {
-        let data = this.theDocs();
+        let data = this.getDocs();
         return (
             <div className="container">
                 <Header />
