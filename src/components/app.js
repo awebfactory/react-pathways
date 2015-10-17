@@ -1,15 +1,33 @@
 import React from 'react';
 import Header from './home/header';
-import DOCS from '../data/docs.js'
+import docUtils from '../data/doc-utils.js'
 
 class App extends React.Component {
-
+    constructor(props) {
+        super(props);
+        this.state = {
+            DOCS: []
+        };
+    }
+    init() {
+        docUtils.getDocs()
+            .then((dataObj) => {
+                this.setState({
+                    DOCS: dataObj.data
+                });
+            });
+    }
+    componentDidMount() {
+        this.init();
+        console.log(this.state.DOCS);
+    }
     render() {
-        let theState = this.state;
         return (
             <div className="container">
-                <Header />
-                {React.cloneElement(this.props.children, {docs: DOCS})}
+                <Header/>
+                {React.cloneElement(this.props.children, {
+                    docs: this.state.DOCS
+                })}
             </div>
         );
     }
