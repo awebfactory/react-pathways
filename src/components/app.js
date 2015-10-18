@@ -19,7 +19,6 @@ class App extends React.Component {
     }
     componentDidMount() {
         this.init();
-        console.log(this.state.DOCS);
     }
     render() {
         return (
