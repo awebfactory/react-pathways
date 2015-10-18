@@ -1,6 +1,6 @@
 import React from 'react';
 import DocsList from './docs-list';
-import DocsIndex from './docs-index';
+import CurrentDoc from './current-doc';
 
 class Docs extends React.Component {
     render() {
@@ -14,7 +14,7 @@ class Docs extends React.Component {
                         <DocsList docs={this.props.docs}/>
                     </div>
                     <div className="col-sm-6">
-                        <DocsIndex/>
+                        <CurrentDoc id = {this.props.location.pathname} />
                     </div>
                 </div>
             </div>
