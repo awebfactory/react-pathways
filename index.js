@@ -4,6 +4,7 @@ var serveStatic = require('serve-static')
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var path = require('path');
+var _ = require('lodash');
 
 // web app middleware
 var app = express();
@@ -22,6 +23,8 @@ app.use(methodOverride());
 // server-side router
 var router = express.Router();
 
+
+
 // some doc data to serve via REST api
 var docs = [{
     id: "f588d038-0cfd-4e4b-add7-959c332081bc",
@@ -37,9 +40,14 @@ var docs = [{
     body: "Aliquizzle cool, yippiyo izzle blandizzle sheezy, nibh fo shizzle tempizzle dizzle, my shizz mollis magna phat pellentesque est. Maecenas placerat, libero daahng dawg euismizzle crazy, ipsum yo gravida that's the shizzle, izzle vehicula nisl ass owned tellivizzle. Away nulla bling bling, imperdiet quizzle, uhuh ... yih! volutpizzle, pulvinar i saw beyonces tizzles and my pizzle went crizzle, pede. Vivamizzle funky fresh. Curabitizzle placerizzle, daahng dawg quis cursizzle sheezy."
 }, ];
 
-// GET ./api/docs
-router.get('/docs', function (req, res) {
+// GET ./api/doc
+router.get('/doc', function (req, res) {
     res.send(docs);
+})
+
+// GET ./api/doc/:id
+router.get('/doc/:id', function (req, res) {
+    res.send(_.where(docs, {id: req.params.id}));
 })
 
 app.use('/api', router);
