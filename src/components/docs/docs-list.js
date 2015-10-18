@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router'
 
 class DocsList extends React.Component {
     render() {
@@ -12,7 +13,9 @@ class DocsList extends React.Component {
                         .props
                         .docs
                         .map(doc => (
-                            <li key={doc.id}>{doc.title}</li>
+                            <li key={doc.id}>
+                                <Link to={`/docs/${doc.id}`}>{doc.title}</Link>
+                            </li>
                         ))}
                 </ul>
             </div>
