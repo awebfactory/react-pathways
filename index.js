@@ -18,7 +18,6 @@ app.use(bodyParser.json());
 
 // bootstrap public/index.html
 app.use(methodOverride());
-app.use(serveStatic(__dirname + '/public'))
 
 // server-side router
 var router = express.Router();
@@ -47,6 +46,7 @@ app.use('/api', router);
 
 // handle every other route with index.html, which will contain
 // a script tag to your application's JavaScript file(s).
+app.use(serveStatic(__dirname + '/public'))
 app.get('*', function (req, res){
   res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 })
