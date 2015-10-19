@@ -8,8 +8,11 @@ class CurrentDoc extends React.Component {
             currentDoc: {}
         };
     }
+    
     getCurrentDoc(props) {
-        var id = props ? props.params.id : this.props.params.id
+        var id = props
+            ? props.params.id
+            : this.props.params.id
         docUtils.getDoc(id)
             .then((dataObj) => {
                 this.setState({
@@ -20,6 +23,10 @@ class CurrentDoc extends React.Component {
 
     componentDidMount() {
         this.getCurrentDoc();
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.setState(this.getCurrentDoc(nextProps))
     }
 
     render() {
