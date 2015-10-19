@@ -1,0 +1,1 @@
+This is the destination directory for bundle.js and any other distribution targeted js files involved in the build process and to be invoked by index.html. It is versioned in order to make the directory hierarchy used by the npm build process visible.

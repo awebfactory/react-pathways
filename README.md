@@ -22,17 +22,7 @@ This project attempts to document itself in the commit comments (and related iss
 npm install
 ````
 
-### Development cycle involves:
-
-After install, one time:
-
-````
-mkdir public/js
-mkdir public/css
-npm run build
-````
-
-After any changes in the app
+### Build
 
 ````
 npm run build
