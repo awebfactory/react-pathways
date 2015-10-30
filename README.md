@@ -36,7 +36,7 @@ In one terminal, do `npm run watch-js` so that any JavaScript file changes will 
 
 In another, do `npm run watch-css` so that another process can watch the sass files.
 
-In other do `npm start` and Browsersync (installed locally via initial `npm install`) will fire up the app in your opened browser automagically. Browsersync is built into the express server `index.js`, and while watchify is watching the `./src` directory, Browsersync is triggered when watchify and node-sass complete any changes, altering the `./public` directory.
+In a third terminal, do `npm start` and Browsersync (installed locally via initial `npm install`) will fire up the app in your opened browser automagically. Browsersync is built into the express server `index.js`, and while watchify is watching the `./src` directory, Browsersync is triggered when watchify and node-sass complete any changes, altering the `./public` directory.
 
 ### Serve up in production mode without Browsersync
 
