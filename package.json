@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify src/main.js -t babelify --outfile public/js/bundle.js && node-sass --output-style compressed styles/main.scss public/css/main.css",
-    "watch": "watchify src/main.js -t babelify --outfile public/js/bundle.js && node-sass --output-style compressed styles/main.scss public/css/main.css",
+    "build-js": "browserify src/main.js -t babelify --outfile public/js/bundle.js",
+    "build-css": "node-sass --output-style compressed styles/main.scss public/css/main.css",
+    "build": "npm run build-js && npm run build-css",
+    "watch-js": "watchify src/main.js -t babelify --outfile public/js/bundle.js",
+    "watch-css": "npm run build-css && node-sass --output-style compressed --include-path styles -w styles -o public/css",
     "start": "node index.js"
   },
   "repository": {
@@ -36,6 +39,7 @@
   },
   "devDependencies": {
     "babelify": "^6.3.0",
+    "browser-sync": "^2.9.11",
     "node-sass": "^3.3.3"
   }
 }

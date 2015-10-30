@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var path = require('path');
 var _ = require('lodash');
+var browserSync = require('browser-sync');
 
 // web app middleware
 var app = express();
@@ -41,13 +42,15 @@ var docs = [{
 }, ];
 
 // GET ./api/doc
-router.get('/doc', function (req, res) {
+router.get('/doc', function(req, res) {
     res.send(docs);
 })
 
 // GET ./api/doc/:id
-router.get('/doc/:id', function (req, res) {
-    res.send(_.where(docs, {id: req.params.id}));
+router.get('/doc/:id', function(req, res) {
+    res.send(_.where(docs, {
+        id: req.params.id
+    }));
 })
 
 app.use('/api', router);
@@ -55,14 +58,24 @@ app.use('/api', router);
 // handle every other route with index.html, which will contain
 // a script tag to your application's JavaScript file(s).
 app.use(serveStatic(__dirname + '/public'))
-app.get('*', function (req, res){
-  res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
+app.get('*', function(req, res) {
+    res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 })
 
 var url = process.env.IP || '0.0.0.0'
 var port = 3000;
 app.set('port', process.env.PORT || port)
 
-var server = app.listen(app.get('port'), url, function () {
-    console.log('Static server listening url %s on port %s', url, server.address().port);
-})
+function listening() {
+    // NODE_ENV=production node index.js
+    if (process.env.NODE_ENV == 'production') {
+        console.log('Static server listening url %s on port %s', url, server.address().port);
+    } else {
+        browserSync({
+            proxy: 'localhost:' + port,
+            files: ['public/**/*.{js,css}']
+        });
+    }
+}
+
+var server = app.listen(port, listening);
