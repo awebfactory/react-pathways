@@ -15,6 +15,8 @@ This project attempts to document itself in the commit comments (and related iss
 * Install and configure [git](https://git-scm.com/book/en/v2)
 * Install [browserify](http://browserify.org/)
     * `npm install -g browserify`
+* Install [watchify](https://github.com/substack/watchify)
+    * `npm install -g watchify`
 
 ### Install
 
