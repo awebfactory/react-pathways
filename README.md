@@ -1,3 +1,5 @@
+[note: now being refactored, the old 2015-oct "ancient history" branch has been conserved for the convenience of those using it (`git checkout 2015-oct`)]
+
 # react-starter
 A minimalist latest version react and react-router skeleton, an exploration for personal use (ES6, browserify, watchify, browsersync, sass, npm instead of gulp...)
 
