@@ -1,7 +1,9 @@
+#### Under heavy refactoring, do not clone at this time 
+
 [note: now being refactored, the old 2015-oct "ancient history" branch has been conserved for the convenience of those using it (`git checkout 2015-oct`)]
 
 # react-starter
-A minimalist latest version react and react-router skeleton, an exploration for personal use (ES6, browserify, watchify, browsersync, sass, npm instead of gulp...)
+A minimalist latest version react, react-router, redux and jwt/bcrypt auth skeleton with node/express server and REST API server. An exploration for personal use (ES6, browserify, watchify, browsersync, sass, npm instead of gulp...)
 
 ## Minimalist instructions
 
@@ -32,20 +34,16 @@ npm install
 npm run build
 ````
 
-### Serve up in dev mode with Browsersync
+### Run in either dev or server modes
 
-In one terminal, do `npm run watch-js` so that any JavaScript file changes will result in automatic build to `./public` via watchify.
+#### Serve up in dev mode with Browsersync
 
-In another, do `npm run watch-css` so that another process can watch the sass files.
-
-In a third terminal, do `npm start` and Browsersync (installed locally via initial `npm install`) will fire up the app in your opened browser automagically. Browsersync is built into the express server `index.js`, and while watchify is watching the `./src` directory, Browsersync is triggered when watchify and node-sass complete any changes, altering the `./public` directory.
-
-### Serve up in production mode without Browsersync
+#### Serve up in production server mode
 
 ```
-NODE_ENV=production node index.js
+npm start
 ```
 
-Access app at `http://localhost:3000` or directly to, for example `http://localhost:3000/docs`.
+Access app at `http://example.com:3000` or directly to, for example `http://example.com:3000/docs`.
 
 Try out incipient REST API at `http://localhost:3000/api/docs`.
