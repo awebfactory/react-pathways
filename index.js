@@ -2,7 +2,6 @@ var express = require('express')
 var morgan = require('morgan');
 var serveStatic = require('serve-static')
 var bodyParser = require('body-parser');
-var methodOverride = require('method-override');
 var path = require('path');
 
 // web app middleware
@@ -17,7 +16,6 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 // bootstrap public/index.html
-app.use(methodOverride());
 app.use(serveStatic(__dirname + '/public'))
 
 // server-side router

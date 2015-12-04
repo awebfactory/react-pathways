@@ -1,16 +1,14 @@
 {
   "name": "react-starter",
   "version": "1.0.0",
-  "description": "A minimalist latest version react and react-router skeleton, an exploration for personal use",
+  "description": "A minimalist latest version react, react-router, redux and auth plus node static and api server skeleton, an exploration for personal use",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
     "build-js": "browserify src/main.js -t babelify --outfile public/js/bundle.js",
     "build-css": "node-sass --output-style compressed styles/main.scss public/css/main.css",
-    "build": "npm run build-js && npm run build-css",
-    "watch-js": "watchify src/main.js -t babelify --outfile public/js/bundle.js",
-    "watch-css": "npm run build-css && node-sass --output-style compressed --include-path styles -w styles -o public/css",
-    "start": "NODE_ENV=production node index.js"
+    "build": "npm run build-js && npm run build-css"
   },
   "repository": {
     "type": "git",
@@ -24,22 +22,26 @@
   },
   "homepage": "https://github.com/awebfactory/react-starter#readme",
   "dependencies": {
-    "axios": "^0.7.0",
+    "babelify": "^7.2.0",
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
-    "history": "^1.12.4",
-    "lodash": "^3.10.1",
-    "method-override": "^2.3.5",
     "morgan": "^1.6.1",
+    "node-sass": "^3.4.2",
     "path": "^0.12.7",
-    "react": "^0.14.0",
-    "react-dom": "^0.14.0",
-    "react-router": "^1.0.0-rc3",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
     "serve-static": "^1.10.0"
   },
   "devDependencies": {
-    "babelify": "^6.3.0",
-    "browser-sync": "^2.9.11",
-    "node-sass": "^3.3.3"
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0",
+    "node-sass": "^3.4.2"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
   }
 }
