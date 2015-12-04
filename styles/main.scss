@@ -1,10 +1,22 @@
-$aWebFactoryColor: #996633;
+$aWebFactoryHeaderColor: #996633;
+$aWebFactoryContentColor: #333;
+$aWebFactoryFooterColor: #568B02;
 
 .logo {
     margin-bottom: 1em;
 }
 
 .awf-header {
-    color: $aWebFactoryColor;
+    color: $aWebFactoryHeaderColor;
+    padding: 0 1em;
+}
+
+.awf-content {
+    color: $aWebFactoryContentColor;
+    padding: 0 1em;
+}
+
+.awf-footer {
+    color: $aWebFactoryFooterColor;
     padding: 0 1em;
 }

@@ -1,10 +1,16 @@
 import React from 'react';
+import Header from './header';
+import Content from './content';
+import Footer from './footer';
+
 
 class App extends React.Component {
   render(){
     return (
-    	<div className="awf-header">
-   		    <h1>Welcome to React Starter</h1>
+    	<div className="container">
+    	    <Header />
+    	    <Content />
+    	    <Footer />
     	</div>
  	);
   }
