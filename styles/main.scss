@@ -23,3 +23,12 @@ $awfText: #333333;
     color: $awfDarkGreen;
     padding: 0 1em;
 }
+
+.navbar-inverse {
+	background-image: none;
+	background-color: $awfDarkGreen;
+	border-color: $awfLightGreen;
+}
+.nvabar-nav li a {
+	color: #eeeeee;
+}
