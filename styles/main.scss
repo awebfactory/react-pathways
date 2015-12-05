@@ -1,22 +1,25 @@
-$aWebFactoryHeaderColor: #996633;
-$aWebFactoryContentColor: #333;
-$aWebFactoryFooterColor: #568B02;
+$awfDarkBrown: #996633;
+$awfDarkOrange: #ff9900;
+$awfLightOrange: #fdbd50;
+$awfDarkGreen: #669900;
+$awfLightGreen: #99cc66;
+$awfText: #333333;
 
 .logo {
     margin-bottom: 1em;
 }
 
 .awf-header {
-    color: $aWebFactoryHeaderColor;
+    color: $awfDarkBrown;
     padding: 0 1em;
 }
 
 .awf-content {
-    color: $aWebFactoryContentColor;
+    color: $awfText;
     padding: 0 1em;
 }
 
 .awf-footer {
-    color: $aWebFactoryFooterColor;
+    color: $awfDarkGreen;
     padding: 0 1em;
 }

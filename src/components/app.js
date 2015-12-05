@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './header';
-import Content from './content';
+import Home from './content/home';
 import Footer from './footer';
 
 
@@ -9,8 +9,7 @@ class App extends React.Component {
     return (
     	<div className="container">
     	    <Header />
-    	    <Content />
-    	    <Footer />
+    	    {this.props.children}
     	</div>
  	);
   }
