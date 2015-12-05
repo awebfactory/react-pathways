@@ -3,9 +3,11 @@ $awfDarkOrange: #ff9900;
 $awfLightOrange: #fdbd50;
 $awfDarkGreen: #669900;
 $awfLightGreen: #99cc66;
+$awfVeryLightGreen: #dbf3c3;
 $awfText: #333333;
 
 .logo {
+    margin-top: 1em;
     margin-bottom: 1em;
 }
 
@@ -13,7 +15,9 @@ $awfText: #333333;
     color: $awfDarkBrown;
     padding: 0 1em;
 }
-
+.jumbotron p {
+	color: $awfText;
+}
 .awf-content {
     color: $awfText;
     padding: 0 1em;
@@ -29,6 +33,6 @@ $awfText: #333333;
 	background-color: $awfDarkGreen;
 	border-color: $awfLightGreen;
 }
-.nvabar-nav li a {
-	color: #eeeeee;
+.navbar-inverse .navbar-nav>li>a {
+	color: $awfVeryLightGreen;
 }

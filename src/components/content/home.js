@@ -5,7 +5,7 @@ class Home extends React.Component {
     return (
         <div className="jumbotron awf-header">
             <h1>Welcome to react-starter</h1>
-    	    <p>But may it not be, that while the whales of the present hour are an advance in magnitude upon those of all previous geological periods; may it not be, that since Adam's time they have degenerated?</p>
+    	    <p>A minimalist latest version react, react-router, redux and jwt/bcrypt auth skeleton starter with node/express server and REST API server. An exploration for personal use (ES6, browserify, watchify, browsersync, sass, npm instead of gulp...)</p>
         </div>
  	);
   }
