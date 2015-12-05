@@ -34,11 +34,25 @@ npm install
 npm run build
 ````
 
-### Run in either dev or server modes
+### Then run in either dev or server modes
 
-#### Serve up in dev mode with Browsersync
+#### Serve up in dev mode 
+
+Watches scss, js and runs server in parallel; browser refresh required to see changes.
+
+```
+npm run watch
+```
+
+Local browser-sync and/or hot reloader coming back soon...
 
 #### Serve up in production server mode
+
+```
+NODE_ENV=production node index.js
+```
+
+#### Or just serve up
 
 ```
 npm start
