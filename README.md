@@ -1,4 +1,4 @@
-#### Under heavy refactoring, do not clone at this time 
+#### Note: Under heavy refactoring, do not clone at this time 
 
 [note: now being refactored, the old 2015-oct "ancient history" branch has been conserved for the convenience of those using it (`git checkout 2015-oct`)]
 
