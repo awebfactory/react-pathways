@@ -21,6 +21,10 @@ This project attempts to document itself in the commit comments (and related iss
     * `npm install -g browserify`
 * Install [watchify](https://github.com/substack/watchify)
     * `npm install -g watchify`
+* Install [nodemon](https://www.npmjs.com/package/nodemon)
+    * `npm install -g nodemon`
+* Install [babel-cli](https://babeljs.io/docs/usage/cli/)
+    * `npm installl -g babel-cli`
 
 ### Install
 
