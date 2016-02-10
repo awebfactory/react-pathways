@@ -13,18 +13,16 @@ class Docs extends React.Component {
     init() {
         docUtils.getDocs()
         .then((dataObj) => {
-           	//console.log('the data', dataObj.data);
             this.setState({
                 docs: dataObj.data
             });
         });
     }
     getDocByKey(key) {
-    	return this.state.docs[0];
+    	return this.state.docs.find(doc => doc.id == key);
     }
     componentDidMount() {
     	this.init();
-    	//console.log('docs', this.state.docs);
     }
     render() {
         const docListComponent = this.state.docs.length !== 0 ? 
