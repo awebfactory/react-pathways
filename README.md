@@ -1,9 +1,11 @@
 #### Note: Under heavy refactoring, do not clone at this time 
 
-[note: now being refactored, the old 2015-oct "ancient history" branch has been conserved for the convenience of those using it (`git checkout 2015-oct`)]
+An exploration for personal use (ES6, browserify, watchify, browsersync, sass, npm instead of gulp...).
+
+Ready for use, refactoring to latest versions of dependencies complete, React, ReactDom, React Router with axios data fetching from REST API server exposed by node/express server/bootstrapper. Coming soon: Redux managing app state and data, then auth and universal version.
 
 # react-starter
-A minimalist latest version react, react-router, redux and jwt/bcrypt auth skeleton with node/express server and REST API server. An exploration for personal use (ES6, browserify, watchify, browsersync, sass, npm instead of gulp...)
+A minimalist latest version react, react-router, axios for data fetching from node/express server and REST API server. Coming soon: redux and jwt/bcrypt auth skeleton.
 
 ## Minimalist instructions
 
