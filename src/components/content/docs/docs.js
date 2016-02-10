@@ -7,8 +7,7 @@ class Docs extends React.Component {
     constructor(){
 	    super();
 		this.state = {
-		    docs: [],
-		    currentDoc: ''
+		    docs: []
 		}
     }
     init() {
@@ -28,11 +27,6 @@ class Docs extends React.Component {
         const docListComponent = this.state.docs.length !== 0 ? 
                         <DocsList docs={this.state.docs}/> :
                         <span><h3>Click on a doc to view</h3><h4>(No docs yet! Create some docs!)</h4></span>
-        const currentDoc = this.state.currentDoc !== '' ? 
-                        <CurrentDoc doc={this.state.currentDoc} /> :
-                        <div className="page-header awf-header">
-                            <h2>'Docs. Read all the things.'</h2>
-                        </div>
         return (
             <div className="container">
             	<div className="jumbotron awf-header">
@@ -43,7 +37,7 @@ class Docs extends React.Component {
                         {docListComponent}
                     </div>
                     <div className="content col-sm-6">
-                        {currentDoc}
+                        {this.props.children}
                     </div>
             	</div>
             </div>

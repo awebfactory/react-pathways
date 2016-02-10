@@ -7,3 +7,5 @@ class CurrentDoc extends React.Component {
 		);
 	}
 }
+
+export default CurrentDoc;
