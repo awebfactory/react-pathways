@@ -19,6 +19,9 @@ class Docs extends React.Component {
             });
         });
     }
+    getDocByKey(key) {
+    	return this.state.docs[0];
+    }
     componentDidMount() {
     	this.init();
     	//console.log('docs', this.state.docs);
@@ -37,7 +40,9 @@ class Docs extends React.Component {
                         {docListComponent}
                     </div>
                     <div className="content col-sm-6">
-                        {this.props.children}
+                        {React.cloneElement(this.props.children, {
+                            getDoc: this.getDocByKey.bind(this)
+                        })}
                     </div>
             	</div>
             </div>
