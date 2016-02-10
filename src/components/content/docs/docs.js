@@ -1,5 +1,6 @@
 import React from 'react';
 import DocsList from './docs-list';
+import docUtils from '../../../helpers/doc-utils';
 
 class Docs extends React.Component {
     constructor(){
@@ -7,6 +8,19 @@ class Docs extends React.Component {
 		this.state = {
 		    docs: []
 		}
+    }
+    init() {
+        docUtils.getDocs()
+        .then((dataObj) => {
+           	//console.log('the data', dataObj.data);
+            this.setState({
+                docs: dataObj.data
+            });
+        });
+    }
+    componentDidMount() {
+    	this.init();
+    	//console.log('docs', this.state.docs);
     }
     render() {
         const docListComponent = this.state.docs.length !== 0 ? 

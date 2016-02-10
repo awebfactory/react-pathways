@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/awebfactory/react-starter#readme",
   "dependencies": {
+    "axios": "^0.9.1",
     "body-parser": "^1.14.2",
     "express": "^4.13.4",
     "history": "^1.13.1",
