@@ -24,7 +24,7 @@ This project attempts to document itself in the commit comments (and related iss
 * Install [nodemon](https://www.npmjs.com/package/nodemon)
     * `npm install -g nodemon`
 * Install [babel-cli](https://babeljs.io/docs/usage/cli/)
-    * `npm installl -g babel-cli`
+    * `npm install -g babel-cli`
 
 ### Install
 
