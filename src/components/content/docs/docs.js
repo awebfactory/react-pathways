@@ -19,7 +19,8 @@ class Docs extends React.Component {
         });
     }
     getDocByKey(key) {
-    	return this.state.docs.find(doc => doc.id == key);
+    	let theDoc = this.state.docs.find(doc => doc.id == key);
+    	return theDoc;
     }
     componentDidMount() {
     	this.init();
