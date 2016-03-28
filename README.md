@@ -1,8 +1,10 @@
-An exploration for personal use (ES6, webpack, webpack dev server and hot module replacement, sass, npm instead of gulp...).
+### AWebFactory react-starter
 
-Ready for use, refactoring to latest versions of dependencies complete, React, ReactDom, React Router with axios data fetching from REST API server exposed by node/express server/bootstrapper. Coming soon: Redux managing app state and data, then auth and universal version.
+Minimalist latest version React, React Router and Redux skeleton served up by a NodeJS/Express server which also exposes a REST API to provide data for the app.
 
-# react-starter
-A minimalist latest version react, react-router, axios for data fetching from node/express server and REST API server. Coming soon: redux and jwt/bcrypt auth skeleton.
+This is a step-by-step approach to building a small starter set as an exploration for personal use, with the objective of avoiding overwhelming ourselves with un-needed complexity.
+
+Now supporting a build workflow based on Webpack, with an alternative dev workflow including Webpack Dev Server with Hot Reloading
 
 ## Minimalist instructions
+
