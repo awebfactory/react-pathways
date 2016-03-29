@@ -8,3 +8,27 @@ Now supporting a build workflow based on Webpack, with an alternative dev workfl
 
 ## Minimalist instructions
 
+### Installation
+
+No global dependencies other than `node` and `git`, in order to manage tool-chain releases on a per-project basis.
+
+```
+$ git clone https://github.com/awebfactory/react-starter.git
+$ npm install
+```
+
+### Build mode
+
+In order to transpile ES6, JSX and CSS pre-processor files found in `src`, on a one-time basis, producing a `public/js/bundle.js` file ready to be run locally with `npm start` or for deployment on a server, do:
+
+```
+$ npm run build
+```
+
+Then, to run the app:
+
+```
+$ npm start
+```
+
+### Dev mode
