@@ -1,5 +1,4 @@
 const path = require('path');
-const merge = require('webpack-merge');
 const webpack = require('webpack');
 //const NpmInstallPlugin = require('npm-install-webpack-plugin');
 
@@ -11,7 +10,7 @@ const PATHS = {
 
 process.env.BABEL_ENV = TARGET;
 
-const common = {
+module.exports = {
   entry: {
     src: path.join(PATHS.src, 'main.js')
   },
@@ -24,30 +23,26 @@ const common = {
   },
   module: {
     loaders: [
-      {
-        test: /\.css$/,
-        loaders: ['style', 'css'],
-        include: PATHS.src
-      },
-      {
-        test: /\.jsx?$/,
-        loaders: ['babel?cacheDirectory'],
-        include: PATHS.src
-      }
+    {
+      test: /\.css$/,
+      loaders: ['style', 'css'],
+      include: PATHS.src
+    },
+    {
+      test: /\.jsx?$/,
+      loaders: ['babel?cacheDirectory'],
+      include: PATHS.src
+    }
     ]
   }
-};
+  devtool: 'eval-source-map',
+  devServer: {
+    contentBase: PATHS.public,
 
-if(TARGET === 'dev' || !TARGET) {
-  module.exports = merge(common, {
-    devtool: 'eval-source-map',
-    devServer: {
-      contentBase: PATHS.public,
-
-      historyApiFallback: true,
-      hot: true,
-      inline: true,
-      progress: true,
+    historyApiFallback: true,
+    hot: true,
+    inline: true,
+    progress: true,
 
       // display only errors to reduce the amount of output
       stats: 'errors-only',
@@ -58,14 +53,12 @@ if(TARGET === 'dev' || !TARGET) {
       port: process.env.PORT
     },
     plugins: [
-      new webpack.HotModuleReplacementPlugin(),
-      new NpmInstallPlugin({
+    new webpack.HotModuleReplacementPlugin(),
+    new NpmInstallPlugin({
         save: true // --save
       })
     ]
-  });
-}
+  };
 
-if(TARGET === 'build') {
-  module.exports = merge(common, {});
-}
+
+
