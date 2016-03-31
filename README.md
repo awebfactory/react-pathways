@@ -17,9 +17,9 @@ $ git clone https://github.com/awebfactory/react-starter.git
 $ npm install
 ```
 
-### Build mode
+### Build only mode
 
-In order to transpile ES6, JSX and CSS pre-processor files found in `src`, on a one-time basis, producing a `public/js/bundle.js` file ready to be run locally with `npm start` or for deployment on a server, do:
+In order to transpile ES6, JSX found in `src` and CSS pre-processor files found in `styles`, on a one-time basis, producing a `public/js/bundle.js` file and a `public/css/main.css` file ready to be run locally with `npm start` or for deployment on a server, do:
 
 ```
 $ npm run build
@@ -31,4 +31,32 @@ Then, to run the app:
 $ npm start
 ```
 
+and point your browser at `http://localhost:3000`.
+
+See the npm scripts in `package.json`
+
 ### Dev mode
+
+In dev mode, changes in either sass or js/jsx files will automatically trigger rebuilding the `./public/css/main.css` and/or `./public/js/bundle.js` files on-the=fly, and a refresh of the browser will show the changes without have to manually re-run the build process.
+
+If this is a first time session installation, do: 
+
+```
+npm run build
+```
+
+To start a dev session, do:
+
+```
+$ npm run watch
+```
+
+Leave those processes running in the terminal, start another and do:
+
+```
+$ npm start
+```
+
+and point your browser at `http://localhost:3000`.
+
+
