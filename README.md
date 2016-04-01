@@ -69,7 +69,7 @@ Leave those watch processes running in one terminal, start another and do:
 $ npm run dev
 ```
 
-You should be seeing something like the following
+After a bit, your open browser gets another tab, the app "magically" comes up of its own accord (and is refreshed automatically with any changes in `*.js` or `*.sass` files) and you should be seeing something like the following:
 
 ```
 BrowserSync server listening url 0.0.0.0 on port 3000 in development mode
