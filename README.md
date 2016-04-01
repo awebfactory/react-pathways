@@ -61,7 +61,7 @@ $ npm start
 
 and point your browser at `http://localhost:3000`.
 
-#### Without BrowserSync
+#### With BrowserSync
 
 Leave those watch processes running in one terminal, start another and do:
 
