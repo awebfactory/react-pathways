@@ -1,6 +1,7 @@
-var express = require('express')
+var express = require('express');
+var browserSync = require('browser-sync');
 var morgan = require('morgan');
-var serveStatic = require('serve-static')
+var serveStatic = require('serve-static');
 var bodyParser = require('body-parser');
 var path = require('path');
 
@@ -60,7 +61,10 @@ var url = process.env.IP || '0.0.0.0'
 var port = 3000;
 app.set('port', process.env.PORT || port)
 
-var server = app.listen(app.get('port'), url, function() {
-	console.log('Static server listening url %s on port %s', url, server
-			.address().port);
-})
+if (process.env.NODE_ENV == 'production') {
+    var server = app.listen(app.get('port'), url, function() {
+        console.log('Static server listening url %s on port %s in %s mode', url, server
+            .address().port, process.env.NODE_ENV);
+    })
+}
+
