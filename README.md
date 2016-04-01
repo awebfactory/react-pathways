@@ -51,6 +51,8 @@ To start a dev session, do:
 $ npm run watch
 ```
 
+#### Without BrowserSync
+
 Leave those processes running in the terminal, start another and do:
 
 ```
@@ -59,4 +61,26 @@ $ npm start
 
 and point your browser at `http://localhost:3000`.
 
+#### Without BrowserSync
 
+Leave those watch processes running in one terminal, start another and do:
+
+```
+$ npm run dev
+```
+
+You should be seeing something like the following
+
+```
+BrowserSync server listening url 0.0.0.0 on port 3000 in development mode
+[BS] Proxying: http://localhost:3000
+[BS] Access URLs:
+ ------------------------------------
+       Local: http://localhost:3001
+    External: [device ip:port]
+ ------------------------------------
+          UI: http://localhost:3002
+ UI External: [device ip:port]
+ ------------------------------------
+[BS] Watching files...
+```
