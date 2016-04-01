@@ -84,3 +84,9 @@ BrowserSync server listening url 0.0.0.0 on port 3000 in development mode
  ------------------------------------
 [BS] Watching files...
 ```
+
+With BrowserSync I'll typically have three terminal tabs or windows open:
+
+* one for git and other dev process tasks
+* one running `npm run watch`
+* one running `npm run dev`
