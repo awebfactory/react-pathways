@@ -1,12 +1,14 @@
 ### AWebFactory react-starter
 
-Minimalist latest version React, React Router and Redux skeleton served up by a NodeJS/Express server which also exposes a REST API to provide data for the app.
+So react-starter is actually changing into a non-trivial example app... as a react starter, but not a scaffolded boilerplate, rather an app that helps you get a head start with Reactjs.
 
-This is a step-by-step approach to building a small starter set as an exploration for personal use, with the objective of avoiding overwhelming ourselves with un-needed complexity.
+It's still based on latest versions of React, React Router and Redux, served up by a NodeJS/Express server which also exposes a REST API to provide data for the app. But now it's actually going to be an app.
 
-Now supporting a build workflow based on Webpack, with an alternative dev workflow including Webpack Dev Server with Hot Reloading.
+> An app to help you find your path to ReactJS step by step, which also serves as an up-to-date non-trivial React, React Router and Redux example app.
 
-## Minimalist instructions
+Now supporting a build workflow based on Browserify, Watchify and BrowserSync, with both build and dev workflows.
+
+## Instructions
 
 ### Installation
 
