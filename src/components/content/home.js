@@ -4,8 +4,9 @@ class Home extends React.Component {
   render(){
     return (
         <div className="jumbotron awf-header">
-            <h1>Welcome to our react-starter</h1>
-    	    <p>A minimalist latest version react, react-router, redux, and es2015 skeleton starter with node/express server and REST API server. An exploration for personal use (with ES2015 and babel, browserify, watchify, browsersync, sass, npm instead of unnecessary task runners).</p>
+            <h1>Welcome to ReactPathways</h1>
+    	    <p>Guidance to help you find your path to ReactJS step by step</p>
+            <p>An app which also serves as an up-to-date non-trivial React, React Router and Redux example.</p>
         </div>
  	);
   }
