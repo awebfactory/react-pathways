@@ -1,12 +1,17 @@
-### AWebFactory react-starter
+### AWebFactory path-to-react
 
-So react-starter is actually changing into a non-trivial example app... as a react starter, but not a scaffolded boilerplate, rather an app that helps you get a head start with Reactjs.
+## ReactPathways
 
-It's still based on latest versions of React, React Router and Redux, served up by a NodeJS/Express server which also exposes a REST API to provide data for the app. But now it's actually going to be an app.
+> An app to help you find your path to ReactJS step by step, and which also serves as an up-to-date non-trivial React, React Router and Redux example.
 
-> An app to help you find your path to ReactJS step by step, which also serves as an up-to-date non-trivial React, React Router and Redux example app.
+The ReactPathways example app is based on latest versions of React, React Router and Redux, served up by a NodeJS/Express server which also exposes a REST API to provide data for the app.
 
-Now supporting a build workflow based on Browserify, Watchify and BrowserSync, with both build and dev workflows.
+If you're interested in seeing what's behind it, check out the MVP01 [issue queue](https://github.com/awebfactory/react-pathways/issues). There are two versions of MVP01 in this repo:
+
+* Staging is right here on `master` branch (demo coming soon). Run that if you want to check current stable version of ReactPathways.
+* Dev is on branch `mvp01`.
+
+At this time, both supporting a build workflow based on Browserify, Watchify and BrowserSync, with both build and dev workflows.
 
 ## Instructions
 
@@ -15,7 +20,7 @@ Now supporting a build workflow based on Browserify, Watchify and BrowserSync, w
 No global dependencies other than `node` and `git`, in order to manage tool-chain releases on a per-project basis.
 
 ```
-$ git clone https://github.com/awebfactory/react-starter.git
+$ git clone https://github.com/awebfactory/react-pathways.git
 $ npm install
 ```
 
