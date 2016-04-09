@@ -1,6 +1,6 @@
 ## ReactPathways
 
-An app to help you choose your own path to ReactJS and follow it step by step. And which also serves as an up-to-date non-trivial React, React Router and Redux example.
+An app to help you choose your own path to ReactJS and follow it step by step. And which also serves as an up-to-date non-trivial React, React Router and Redux example with custom SCSS bootswatch/bootstrap theme, ReactPathly.
 
 The ReactPathways example app is based on the latest versions of React, React Router and Redux, served up by a NodeJS/Express server which also exposes a REST API to provide data for the app.
 
