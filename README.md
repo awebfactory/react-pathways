@@ -1,4 +1,4 @@
-## AWebFactory ReactPathways
+## ReactPathways
 
 > An app to help you find your path to ReactJS step by step, and which also serves as an up-to-date non-trivial React, React Router and Redux example.
 
