@@ -50,11 +50,13 @@ If this is a first time session installation, do:
 npm run build
 ```
 
-To start a dev session, do:
+To start a dev watch session (automatic rebuilding and rebundling for src/js and styles/sass files), do:
 
 ```
 $ npm run watch
 ```
+
+Note that this can be used locally or on a server or cloud based IDE!
 
 #### Without BrowserSync
 
@@ -66,7 +68,13 @@ $ npm start
 
 and point your browser at `http://localhost:3000`.
 
-#### With BrowserSync
+In conjunction with dev watch on a server or cloud IDE, I'll typically have three terminal tabs or windows open:
+
+* one for git and other dev process tasks
+* one running `npm run watch`
+* one running `npm start`
+
+#### With BrowserSync (on a local dev environment)
 
 Leave those watch processes running in one terminal, start another and do:
 
