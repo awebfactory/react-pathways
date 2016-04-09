@@ -1,5 +1,5 @@
 {
-  "name": "react-starter",
+  "name": "react-pathways",
   "version": "1.0.0",
   "description": "A minimalist latest version react, react-router, redux and auth plus node static and api server skeleton, an exploration for personal use",
   "main": "index.js",
@@ -19,15 +19,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/awebfactory/react-starter.git"
+    "url": "git+https://github.com/awebfactory/react-pathways.git"
   },
   "keywords": [],
   "author": "Victor Kane",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/awebfactory/react-starter/issues"
+    "url": "https://github.com/awebfactory/react-pathways/issues"
   },
-  "homepage": "https://github.com/awebfactory/react-starter#readme",
+  "homepage": "https://github.com/awebfactory/react-pathways#readme",
   "dependencies": {
     "axios": "^0.9.1",
     "body-parser": "^1.15.0",
