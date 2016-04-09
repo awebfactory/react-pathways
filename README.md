@@ -2,9 +2,9 @@
 
 An app to help you choose your own path to ReactJS and follow it step by step. And which also serves as an up-to-date non-trivial React, React Router and Redux example.
 
-The ReactPathways example app is based on latest versions of React, React Router and Redux, served up by a NodeJS/Express server which also exposes a REST API to provide data for the app.
+The ReactPathways example app is based on the latest versions of React, React Router and Redux, served up by a NodeJS/Express server which also exposes a REST API to provide data for the app.
 
-If you're interested in seeing what's behind it, check out the MVP01 [issue queue](https://github.com/awebfactory/react-pathways/issues). There are two versions of MVP01 in this repo:
+If you're interested in seeing what's going on behind the scenes, check out the MVP01 [issue queue](https://github.com/awebfactory/react-pathways/issues). There are two versions of MVP01 in this repo:
 
 * Staging is right here on `master` branch (demo coming soon). Run that if you want to check current stable version of ReactPathways.
 * Dev is on branch `mvp01`.
