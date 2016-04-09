@@ -1,3 +1,9 @@
+@import "bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "react-pathly/variables";
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
+@import "react-pathly/bootswatch";
+
 $awfDarkBrown: #996633;
 $awfDarkOrange: #ff9900;
 $awfLightOrange: #fdbd50;
