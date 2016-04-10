@@ -1,6 +1,6 @@
 ## ReactPathways
 
-*Work in progress, but it might be worthwhile to checkout the commits, for example, look at https://github.com/awebfactory/react-pathways/issues/15, Initial integration of [bootstrap](http://getbootstrap.com/) and [bootswatch](http://bootswatch.com/) based ReactPathly "sub-theme" so I can work directly in Sass in my watchify/browser sync workflow, completed with https://github.com/awebfactory/react-pathways/commit/6c75f96075fdf40370d080df00056e9fb26efaff.*
+*Work in progress, but it might be worthwhile to checkout the commits, for example, look at https://github.com/awebfactory/react-pathways/issues/15, Initial integration of [bootstrap](http://getbootstrap.com/) and [bootswatch](http://bootswatch.com/) based ReactPathly "sub-theme" so I can work directly in Sass in my watchify/browser sync workflow.*
 
 *Initial MVP of this educational app will be ready early May at the latest.*
 
