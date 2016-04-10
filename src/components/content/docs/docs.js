@@ -30,8 +30,8 @@ class Docs extends React.Component {
                         <DocsList docs={this.state.docs}/> :
                         <span><h3>Click on a doc to view</h3><h4>(No docs yet! Create some docs!)</h4></span>
         return (
-            <div className="container">
-            	<div className="jumbotron awf-header">
+            <div className = "container rp-page">
+            	<div className="page-header">
             	    <h1>Docs react-starter</h1>
             	</div>
             	<div className="row">
