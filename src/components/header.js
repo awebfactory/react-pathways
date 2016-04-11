@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link, IndexLink } from 'react-router';
 
-const Logo = () => <div className="logo"><Link to="/"><img src="images/logo.png" /></Link></div> 
+const Logo = () => <div className="nav-home logo"><Link to="/"><img src="images/logo.svg" width="36px" height="36px" />ReactPathways</Link></div> 
 const Nav = () => {
 	return (
         <nav className="navbar navbar-default navbar-fixed-top">
             <ul className="nav navbar-nav">
                 <li><Logo /></li>
-                <li><IndexLink to="/">Home</IndexLink></li>
-                <li><Link to='/about'>About</Link></li>
-                <li><Link to='/docs'>Docs</Link></li>
-                <li><Link to='/contact'>Contact</Link></li>
+                <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
+                <li><Link to='about' activeClassName="active">About</Link></li>
+                <li><Link to='docs' activeClassName="active">Docs</Link></li>
+                <li><Link to='contact' activeClassName="active">Contact</Link></li>
             </ul>
         </nav>
     )

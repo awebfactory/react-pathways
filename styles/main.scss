@@ -10,6 +10,18 @@
     margin-top: 65px;
 }
 
+.navbar-fixed-top .nav-home {
+    line-height: 60px;
+    height: 60px;
+    font-size: 24px;
+}
+.nav-home.logo img {
+    margin: 10px;
+}
+ul.navbar-nav li a.active {
+    color:$brand-success;
+}
+
 /*
 $awfDarkBrown: #996633;
 $awfDarkOrange: #ff9900;
