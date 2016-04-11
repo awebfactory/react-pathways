@@ -14,7 +14,7 @@ const Nav = () => {
                     </button>
                     <Logo />
                 </div>
-                <div className="collapse navbar-collapse" id="rf-navbar">
+                <div className="collapse navbar-collapse">
                     <ul className="nav navbar-nav">
                         <li>
                             <IndexLink to="/" activeClassName="active">Home</IndexLink>
