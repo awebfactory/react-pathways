@@ -25,6 +25,12 @@ footer hr {
 footer p {
     color: $gray-light;
 }
+footer p a,
+footer p a:hover,
+footer p a:focus,
+footer p a:active {
+    color: $gray;
+}
 
 .navbar-fixed-top .nav-home {
     line-height: 60px;
