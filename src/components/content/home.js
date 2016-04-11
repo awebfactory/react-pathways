@@ -7,7 +7,7 @@ class Home extends React.Component {
             <div className="page-header">
                 <h1>Welcome to ReactPathways</h1>
             </div>
-    	    <p>Guidance to help you find your path to ReactJS step by step</p>
+    	    <p>Guidance to help you find your own way to ReactJS step by step</p>
             <p>An app which also serves as an up-to-date non-trivial React, React Router and Redux example.</p>
         </div>
  	);
