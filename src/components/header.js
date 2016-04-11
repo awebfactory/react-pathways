@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, IndexLink } from 'react-router';
 
-const Logo = () => <div className="nav-home logo"><Link to="/"><img src="images/logo.svg" width="36px" height="36px" />ReactPathways</Link></div> 
+const Logo = () => <div className="nav-home logo"><Link to="/"><img src="images/react-pathways-36x36.png" width="36px" height="36px" />ReactPathways</Link></div> 
 const Nav = () => {
 	return (
         <nav className="navbar navbar-default navbar-fixed-top">
