@@ -12,8 +12,8 @@ class Footer extends React.Component {
             Victor Kane and <a href="http://awebfactory.com" _target="_blank"><img title="AWebFactory.com" src="images/awf-favicon.ico" width="32" height="32" /></a>
           </p>
           <p className="pull-right">
-            <a href="https://twitter.com/ReactPathways" target="_blank"><img name="Twitter" src="images/icons/svg/twitter-logo-button.svg" width="32" height="32"/></a>
-            <a href="https://www.facebook.com/ReactPathways-1607302469593834/" target="_blank"><img name="Twitter" src="images/icons/svg/facebook-logo-button.svg" width="32" height="32" /></a>
+            <a className="sn" href="https://twitter.com/ReactPathways" target="_blank"><span className="flaticon-twitter-logo-button"/></a>
+            <a className="sn" nhref="https://www.facebook.com/ReactPathways-1607302469593834/" target="_blank"><span className="flaticon-facebook-logo-button" width="32" height="32" /></a>
           </p>
         </div>
         </div>

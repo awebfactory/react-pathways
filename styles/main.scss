@@ -31,6 +31,15 @@ footer p a:focus,
 footer p a:active {
     color: $gray;
 }
+footer p a.sn {
+    color: $gray-light;
+} 
+footer p a:hover,
+footer p a:focus,
+footer p a:active {
+    color: $gray-dark;
+    text-decoration:none;
+}
 
 .navbar-fixed-top .nav-home {
     line-height: 60px;
