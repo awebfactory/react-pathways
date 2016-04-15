@@ -1,6 +1,6 @@
-## <img src="https://github.com/awebfactory/react-pathways/blob/master/public/images/react-pathways-36x36.png" style="float:left"> ReactPathways
+## <img src="https://github.com/awebfactory/react-pathways/blob/master/public/images/react-pathways-36x36.png" name="ReactPathways" style="float:left"> ReactPathways
 
-*Work in progress, no docs yet, but it might be worthwhile to checkout the commits, for example, look at https://github.com/awebfactory/react-pathways/issues/15, initial integration of [bootstrap](http://getbootstrap.com/) and [bootswatch](http://bootswatch.com/) based ReactPathly "sub-theme" so I can work directly in Sass in my watchify/browser sync workflow.*
+*Work in progress, no docs as yet, but it might be worthwhile to checkout the commits, for example, look at https://github.com/awebfactory/react-pathways/issues/15, initial integration of [bootstrap](http://getbootstrap.com/) and [bootswatch](http://bootswatch.com/) based ReactPathly "sub-theme" so I can work directly in Sass in my watchify/browser sync workflow.*
 
 *Initial MVP of this educational app will be ready early May at the latest.*
 
