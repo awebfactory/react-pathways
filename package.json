@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=production node index.js",
-    "dev": "NODE_ENV=development node index.js",
+    "start": "NODE_ENV=production node server.js",
+    "dev": "NODE_ENV=development node server.js",
     "build": "npm-run-all clean -s build-css build-js",
     "build-css": "node-sass --output-style compressed styles/main.scss public/css/main.css",
     "build-js": "browserify src/main.js -t babelify --outfile public/js/bundle.js",
@@ -29,14 +29,17 @@
   },
   "homepage": "https://github.com/awebfactory/react-pathways#readme",
   "dependencies": {
-    "axios": "^0.9.1",
+    "axios": "^0.10.0",
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
+    "history": "^2.1.0",
+    "lodash": "^4.11.1",
+    "mongoose": "^4.4.13",
     "morgan": "^1.7.0",
     "path": "^0.12.7",
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7",
-    "react-router": "^2.0.1",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "react-router": "^2.1.1",
     "serve-static": "^1.10.2"
   },
   "devDependencies": {

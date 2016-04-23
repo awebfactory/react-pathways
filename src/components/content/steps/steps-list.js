@@ -1,20 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router'
 
-class DocsList extends React.Component {
+class StepsList extends React.Component {
     render() {
         return (
             <div className="container">
                 <div>
-                    <h3>Click on a doc to view</h3>
+                    <h3>Click on a step to view</h3>
                 </div>
                 <ul>
                     {this
                         .props
-                        .docs
-                        .map(doc => (
-                            <li key={doc.id}>
-                                <Link to={`/docs/${doc.id}`}>{doc.title}</Link>
+                        .steps
+                        .map(step => (
+                            <li key={step._id}>
+                                <Link to={`/steps/${step._id}`}>{step.title}</Link>
                             </li>
                         ))}
                 </ul>
@@ -23,4 +23,4 @@ class DocsList extends React.Component {
     }
 }
 
-export default DocsList;
+export default StepsList;

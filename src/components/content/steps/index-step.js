@@ -1,13 +1,13 @@
 import React from 'react';
 
-class IndexDoc extends React.Component {
+class IndexStep extends React.Component {
     render() {
         return (
             <div className="page-header awf-header">
-                <h2>'Docs. Read all the things.'</h2>
+                <h2>'Steps to achieve path goal.'</h2>
             </div>
         );
     }
 }
 
-export default IndexDoc;
+export default IndexStep;
