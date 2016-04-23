@@ -19,6 +19,8 @@ At this time, both supporting a build workflow based on Browserify, Watchify and
 
 ### Installation
 
+ReactPathways now persists data in mongodb. There are some sample scripts in `./data/scripts/`.
+
 No global dependencies other than `node` and `git`, in order to manage tool-chain releases on a per-project basis.
 
 ```
