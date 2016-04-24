@@ -5,8 +5,8 @@ var serveStatic = require('serve-static');
 var bodyParser = require('body-parser');
 var path = require('path');
 
-var User = require('./models/db').User
-var Step = require('./models/db').Step
+var User = require('./serv/models/db').User
+var Step = require('./serv/models/db').Step
 
 // web app middleware
 var app = express();
