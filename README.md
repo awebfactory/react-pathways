@@ -2,7 +2,7 @@
 
 *Work in progress, no docs as yet, but it might be worthwhile to checkout the commits, for example, look at https://github.com/awebfactory/react-pathways/issues/15, initial integration of [bootstrap](http://getbootstrap.com/) and [bootswatch](http://bootswatch.com/) based ReactPathly "sub-theme" so I can work directly in Sass in my watchify/browser sync workflow.*
 
-*Initial MVP of this educational app will be ready early May at the latest.*
+*Initial MVP of this educational app will be ready some time in May. Currently adding redux and redux async middleware to communicate with server.*
 
 An app to help you choose your own path to ReactJS and follow it step by step. And which also serves as an up-to-date non-trivial React, React Router and Redux example with custom SCSS bootswatch/bootstrap theme, ReactPathly.
 
