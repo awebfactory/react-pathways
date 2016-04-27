@@ -1,8 +1,10 @@
 export const RECEIVE_PATHS = 'RECEIVE_PATHS'
 
-export const getSteps = (selectedPath = "basicDefault") => {
+export const receiveSteps = (selectedPath = "basicDefault") => {
     return {
         type: RECEIVE_PATHS,
         selectedPath
     }
 }
+
+export const fetchSteps
