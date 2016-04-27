@@ -2,12 +2,11 @@ import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import paths from './reducers';
 import { Router, browserHistory } from 'react-router';
 import routes from './routes';
+import configureStore from './store/configureStore';
 
-let store = createStore(paths);
+let store = configureStore();
 
 ReactDOM.render((
     <Provider store={store}>
