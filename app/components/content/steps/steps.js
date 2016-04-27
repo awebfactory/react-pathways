@@ -3,19 +3,16 @@ import StepsList from './steps-list';
 import CurrentStep from './current-step';
 
 class Steps extends React.Component {
-    constructor(){
-	    super();
-		this.state = {
-		    steps: []
-		}
+    constructor(props){
+	    super(props);
     }
     getStepByKey(key) {
-    	let theStep = this.state.steps.find(step => step._id == key);
+    	let theStep = this.props.steps.find(step => step._id == key);
     	return theStep;
     }
     render() {
-        const stepListComponent = this.state.steps.length !== 0 ? 
-                        <StepsList steps={this.state.steps}/> :
+        const stepListComponent = this.props.steps.length !== 0 ? 
+                        <StepsList steps={this.props.steps}/> :
                         <span><h3>Click on a step to view</h3><h4>(No steps yet! Choose your path!)</h4></span>
         return (
             <div className = "container rp-page">
