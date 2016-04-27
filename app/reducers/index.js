@@ -1,10 +1,11 @@
 import {
-    RECEIVE_PATHS
+    REQUEST_STEPS, RECEIVE_STEPS
 } from '../actions'
 
 function paths(state = [], action) {
     switch (action.type) {
-        case RECEIVE_PATHS:
+        case REQUEST_STEPS:
+        case RECEIVE_STEPS:
             return state
         default:
             return state
