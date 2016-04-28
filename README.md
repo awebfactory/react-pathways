@@ -17,9 +17,11 @@ At this time, both supporting a build workflow based on Browserify, Watchify and
 
 ## Instructions
 
-### Installation
+ReactPathways now persists data in mongodb, is exposed on the server (`server.js`) as a REST API, and is consumed and maintained in application state via [Redux](http://redux.js.org/). See results of `store.getState()` in console:
 
-ReactPathways now persists data in mongodb, is exposed on the server (`server.js`) as a REST API, and is consumed and maintained in application state via [Redux](http://redux.js.org/) (see ![results of `store.getState()` in console](https://raw.githubusercontent.com/awebfactory/react-pathways/master/app/reducers/state.png)). There are some sample mongodb scripts in `./data/scripts/`.
+![state](https://raw.githubusercontent.com/awebfactory/react-pathways/master/app/reducers/state.png)). There are some sample mongodb scripts in `./data/scripts/`.
+
+### Installation
 
 No global dependencies other than `node` and `git`, in order to manage tool-chain releases on a per-project basis.
 
