@@ -11,7 +11,7 @@ The ReactPathways example app is based on the latest versions of React, React Ro
 If you're interested in seeing what's going on behind the scenes, check out the MVP01 [issue queue](https://github.com/awebfactory/react-pathways/issues). There are two versions of MVP01 in this repo:
 
 * Staging is right here on `master` branch (demo coming soon). Run that if you want to check current stable version of ReactPathways.
-* Dev is on branch `thunkit`.
+* Dev is on branch `mvp01`.
 
 At this time, both supporting a build workflow based on Browserify, Watchify and BrowserSync, with both build and dev workflows.
 
@@ -19,7 +19,7 @@ At this time, both supporting a build workflow based on Browserify, Watchify and
 
 ### Installation
 
-ReactPathways now persists data in mongodb. There are some sample scripts in `./data/scripts/`.
+ReactPathways now persists data in mongodb, is exposed on the server (`server.js`) as a REST API, and is consumed and maintained in application state via [Redux](http://redux.js.org/). There are some sample mongodb scripts in `./data/scripts/`.
 
 No global dependencies other than `node` and `git`, in order to manage tool-chain releases on a per-project basis.
 
@@ -36,7 +36,7 @@ In order to transpile ES6, JSX found in `src` and CSS pre-processor files found 
 $ npm run build
 ```
 
-Then, to run the app:
+Then, to run the app (assuming that mongodb is running locally on the usual port and has some sample data (see `./scripts/db`):
 
 ```
 $ npm start
