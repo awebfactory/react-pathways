@@ -19,7 +19,13 @@ At this time, both supporting a build workflow based on Browserify, Watchify and
 
 ReactPathways now persists data in mongodb, is exposed on the server (`server.js`) as a REST API, and is consumed and maintained in application state via [Redux](http://redux.js.org/). See results of `store.getState()` in console:
 
-![state](https://raw.githubusercontent.com/awebfactory/react-pathways/master/app/reducers/state.png)). There are some sample mongodb scripts in `./data/scripts/`.
+![state](https://raw.githubusercontent.com/awebfactory/react-pathways/master/app/reducers/state.png)
+
+There are some sample mongodb scripts in `./scripts/db`, including `./scripts/db/db-insert-steps.js` which you can run in order to insert some sample data, using the following command:
+
+```
+$ mongo ./scripts/db/db-insert-steps.js
+```
 
 ### Installation
 
