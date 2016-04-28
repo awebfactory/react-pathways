@@ -26,12 +26,10 @@ function steps(state = {
     case REQUEST_STEPS:
       return Object.assign({}, state, {
         isFetching: true,
-        didInvalidate: false
       })
     case RECEIVE_STEPS:
       return Object.assign({}, state, {
         isFetching: false,
-        didInvalidate: false,
         items: action.steps,
         lastUpdated: action.receivedAt
       })
@@ -46,7 +44,7 @@ function stepsByPath(state = { }, action) {
     case RECEIVE_STEPS:
     case REQUEST_STEPS:
       return Object.assign({}, state, {
-        [action.path]: steps(state[action.path], action)
+        [action.selectedPath]: steps(state[action.selectedPath], action)
       })
     default:
       return state

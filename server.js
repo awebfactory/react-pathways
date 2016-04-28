@@ -17,9 +17,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 // all the back end server routing and controller things
-// for simple-redux that just hydrates from serialized hard coded array,
-    // no mongo!
-//app.use(require('./serv/routes'));
+app.use(require('./serv/routes'));
 
 // bootstrap public/index.html
 app.use(serveStatic(__dirname + '/public'));

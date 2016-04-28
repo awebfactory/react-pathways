@@ -9,7 +9,7 @@
     "dev": "NODE_ENV=development node server.js",
     "build": "npm-run-all clean -s build-css build-js",
     "build-css": "node-sass --output-style compressed app/styles/main.scss public/css/main.css",
-    "build-js": "browserify app/main.js -t babelify --outfile public/js/bundle.js",
+    "build-js": "browserify app/main.js -t babelify --debug --outfile public/js/bundle.js",
     "watch": "npm-run-all -p watch-css watch-js",
     "watch-js": "watchify app/main.js -t babelify --outfile public/js/bundle.js -v",
     "watch-css": "node-sass -w --output-style compressed app/styles/main.scss public/css/main.css",

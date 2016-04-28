@@ -24,7 +24,7 @@ class Steps extends React.Component {
                         {stepListComponent}
                     </div>
                     <div className="content col-sm-6">
-                        {React.cloneElement(this.props.children, {
+                    {React.cloneElement(this.props.children, {
                             getStep: this.getStepByKey.bind(this)
                         })}
                     </div>

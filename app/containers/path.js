@@ -1,14 +1,47 @@
-import { connect } from 'react-redux'
+import React from 'react';
+import { connect } from 'react-redux';
+import { fetchPosts } from '../actions';
 import Steps from '../components/content/steps/steps';
 
-const mapStateToProps = (state) => {
-    return {
-        steps: state
+class Path extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+    
+    componentDidMount() {
+        const { dispatch, selectedPath } = this.props
+        dispatch(fetchPosts('basicDefault'))
+    }
+    
+    render() {
+        const stepsComponent = this.props.steps.length !== 0 ?
+            <Steps steps={this.props.steps} children={this.props.children}  /> :
+            <p>nothing yet</p>
+        return (
+            <div className="container rp-page">
+                <input placeholder="select your Path!" />
+                {stepsComponent}
+            </div>
+        )
     }
 }
 
-const Path = connect(
-    mapStateToProps
-)(Steps)
+const mapStateToProps = (state) => {
+    const { selectedPath, stepsByPath } = state
+    const {
+        isFetching,
+        lastUpdated,
+        items: steps
+    } = stepsByPath[selectedPath] || {
+        isFetching: true,
+        items: []
+    }
+    return {
+        selectedPath,
+        steps,
+        isFetching,
+        lastUpdated
+    }
+}
 
-export default Path
+export default connect(mapStateToProps)(Path)

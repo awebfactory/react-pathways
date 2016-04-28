@@ -19,24 +19,24 @@ export function invalidatePath(path) {
   }
 }
 
-export const requestSteps = (selectedPath = "basicDefault") => {
+function requestSteps(selectedPath = "basicDefault") {
     return {
         type: REQUEST_STEPS,
         selectedPath
     }
 }
 
-export const receiveSteps = (selectedPath, json) => {
+function receiveSteps(selectedPath, json) {
     return {
         type: RECEIVE_STEPS,
         selectedPath,
-        paths: json.data.children.map(child => child.data),
+        steps: json,
         receivedAt: Date.now()
     }
 }
 
 export function fetchPosts(path) {
-  return dispatch => {
+  return function (dispatch) {
     dispatch(requestSteps(path))
     // when we really grab all steps for a selected path
     // return fetch(`/api/$(path)/`)
