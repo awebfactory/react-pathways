@@ -16,7 +16,9 @@ class Path extends React.Component {
     render() {
         const stepsComponent = this.props.steps.length !== 0 ?
             <Steps steps={this.props.steps} children={this.props.children}  /> :
-            <p>nothing yet</p>
+            <div className = "container rp-page">
+                <h3>Loading...</h3>
+            </div>
         return (
             <div className="container rp-page">
                 <input placeholder="select your Path!" />
