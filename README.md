@@ -11,7 +11,7 @@ The ReactPathways example app is based on the latest versions of React, React Ro
 If you're interested in seeing what's going on behind the scenes, check out the MVP01 [issue queue](https://github.com/awebfactory/react-pathways/issues). There are two versions of MVP01 in this repo:
 
 * Staging is right here on `master` branch (demo coming soon). Run that if you want to check current stable version of ReactPathways.
-* Dev is on branch `mvp01`.
+* Dev is on branch `thunkit`.
 
 At this time, both supporting a build workflow based on Browserify, Watchify and BrowserSync, with both build and dev workflows.
 
