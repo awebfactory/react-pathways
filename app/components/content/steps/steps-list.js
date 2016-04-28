@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Link } from 'react-router'
 
 class StepsList extends React.Component {
@@ -21,6 +21,11 @@ class StepsList extends React.Component {
             </div>
         );
     }
+}
+
+StepsList.propTypes = {
+    steps: PropTypes.array.isRequired,
+    children: React.PropTypes.node
 }
 
 export default StepsList;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
 class CurrentStep extends React.Component {
 	render() {
@@ -13,6 +13,11 @@ class CurrentStep extends React.Component {
             </div>
 		);
 	}
+}
+
+CurrentStep.propTypes = {
+    params: PropTypes.object.isRequired,
+    getStep: PropTypes.func
 }
 
 export default CurrentStep;

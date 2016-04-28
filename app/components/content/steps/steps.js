@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import StepsList from './steps-list';
 import CurrentStep from './current-step';
 
@@ -32,6 +32,11 @@ class Steps extends React.Component {
             </div>
         );
     }
+}
+
+Steps.propTypes = {
+    steps: PropTypes.array.isRequired,
+    children: React.PropTypes.node
 }
 
 export default Steps;
