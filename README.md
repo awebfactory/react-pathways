@@ -17,7 +17,7 @@ At this time, both supporting a build workflow based on Browserify, Watchify and
 
 ## Instructions
 
-ReactPathways now persists data in mongodb, is exposed on the server (`server.js`) as a REST API, and is consumed and maintained in application state via [Redux](http://redux.js.org/). See results of `store.getState()` in console:
+ReactPathways now persists data in mongodb, exposed on the server (`server.js`) via a REST API, and is consumed and maintained in application state via [Redux](http://redux.js.org/). See results of `store.getState()` in console:
 
 ![state](https://raw.githubusercontent.com/awebfactory/react-pathways/master/app/reducers/state.png)
 
