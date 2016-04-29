@@ -8,12 +8,31 @@ An app to help you choose your own path to ReactJS and follow it step by step. A
 
 The ReactPathways example app is based on the latest versions of React, React Router and Redux, served up by a NodeJS/Express server which also exposes a REST API to provide data for the app.
 
+## About
+
+Full stack Ecosystem (minimalist set of dependencies):
+
+* NodeJS server side
+    * [x] NodeJS/Express based REST API and react-router savvy static serving
+    * [x] MongoDB data persistence and mongoose Schemas
+    * [ ] Token based JWT token based authentication server
+    * [x] Modular structure
+* React front end app
+    * [x] React and ReactDOM
+    * [x] Redux
+    * [x] Redux Thunk middleware for asynchronous dispatch
+    * [x] Isomorphic fetch and babel polyfill for asynchronous requests to the server
+    * Support for token based JWT authentication
+    * [x] Bootstrap Sass / Material-UI custom theming support integrated into build system
+* Build system
+    * [x] Browserify/Watchify/Babelify integrated into npm scripts for JSX and ES2015 transpiling, and node-sass Sass preprocessing. So you can get all the "hot" benefits and still see/control what's going on. Look ma', no webpack or gulp!
+    * [x] Separate development and production workflows
+    * [x] Browsersync starts your "hot" browser right up and keeps it in sync
+
 If you're interested in seeing what's going on behind the scenes, check out the MVP01 [issue queue](https://github.com/awebfactory/react-pathways/issues). There are two versions of MVP01 in this repo:
 
 * Staging is right here on `master` branch (demo coming soon). Run that if you want to check current stable version of ReactPathways.
 * Dev is on branch `mvp01`.
-
-At this time, both supporting a build workflow based on Browserify, Watchify and BrowserSync, with both build and dev workflows.
 
 ## Instructions
 
