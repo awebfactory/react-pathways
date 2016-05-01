@@ -2,7 +2,7 @@ var router = require('express').Router()
 
 var Step = require('../../models/step').Step
 
-// GET ./api/result
+// GET ./api/step
 router.get('/step', function(req, res) {
     Step.find({}, function(err, steps) {
         if (err)
