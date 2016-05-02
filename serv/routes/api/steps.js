@@ -24,4 +24,20 @@ router.get('/step/:_id', function(req, res) {
     })
 })
 
+router.post('/step', function(req, res) {
+    console.log('adding new step: ' + req.body.title)
+    var step = new Step({
+        title: req.body.title,
+        description: req.body.description
+    })
+    step.save(function(err, result) {
+        if (err)
+            return res.json({error: err});
+        res.json({
+            message: "Successfully added step",
+            step:result
+        })
+    })
+})
+
 module.exports = router
