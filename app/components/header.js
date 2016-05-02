@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, IndexLink } from 'react-router';
+//import User from '../containers/user';
 
 const Logo = () => <div className="nav-home logo"><Link to="/"><img src="images/react-pathways-36x36.png" width="36px" height="36px" />ReactPathways</Link></div> 
 const Nav = () => {
@@ -28,6 +29,11 @@ const Nav = () => {
                         <li>
                             <Link to='contact' activeClassName="active">Contact</Link>
                         </li>
+                        {/* 
+                        <li>
+                            <User />
+                        </li>
+                        */} 
                     </ul>
                 </div>
             </div>
