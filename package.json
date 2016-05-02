@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=production node server.js",
+    "server-dev": "NODE_ENV=production nodemon --watch serv server.js",
     "dev": "NODE_ENV=development node server.js",
     "build": "npm-run-all clean -s build-css build-js",
     "build-css": "node-sass --output-style compressed app/styles/main.scss public/css/main.css",
