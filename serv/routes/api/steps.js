@@ -6,21 +6,65 @@ var Step = require('../../models/step').Step
 router.get('/step', function(req, res) {
     Step.find({}, function(err, steps) {
         if (err)
-            return res.json({error: "Error fetching steps"});
+            return res.json({
+                error: "Error fetching steps",
+                error: err
+            });
         else if (!steps)
-            return res.json({error: "Error finding steps"});
+            return res.json({
+                error: "Error finding steps",
+                error: err
+            });
         //console.log('steps', steps);
         res.send(steps);
     })
 })
 
 router.get('/step/:_id', function(req, res) {
-    Step.findOne({_id: req.params._id}, function(err, step) {
+    Step.findOne({
+        _id: req.params._id
+    }, function(err, step) {
         if (err)
-            return res.json({error: "Error fetching step"});        
+            return res.json({
+                error: "Error fetching steps",
+                error: err
+            });
         else if (!step)
-            return res.json({error: "Error finding step"});
+            return res.json({
+                error: "Error finding steps",
+                error: err
+            });
         res.send(step);
+    })
+})
+
+router.put('/step/:_id', function(req, res) {
+    Step.findOne({
+        _id: req.params._id
+    }, function(err, step) {
+        if (err)
+            return res.json({
+                error: "Error fetching steps",
+                error: err
+            });
+        else if (!step)
+            return res.json({
+                error: "Error finding steps",
+                error: err
+            });
+        //res.send(step);
+        step.title = req.body.title;
+        step.description = req.body.description;
+        step.save(function(err, result) {
+            if (err)
+                return res.json({
+                    error: err
+                });
+            res.json({
+                message: "Successfully updated step",
+                step: result
+            })
+        })
     })
 })
 
@@ -32,10 +76,12 @@ router.post('/step', function(req, res) {
     })
     step.save(function(err, result) {
         if (err)
-            return res.json({error: err});
+            return res.json({
+                error: err
+            });
         res.json({
             message: "Successfully added step",
-            step:result
+            step: result
         })
     })
 })
