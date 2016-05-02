@@ -86,4 +86,17 @@ router.post('/step', function(req, res) {
     })
 })
 
+router.delete('/step/:_id', function(req, res) {
+    Step.findByIdAndRemove({
+        _id: req.params._id
+    }, function(err) {
+        if (err)
+            return res.json({
+                error: "Error deleting step",
+                error: err
+            });
+        res.json({info: 'step removed successfully'})
+    })
+})
+
 module.exports = router
