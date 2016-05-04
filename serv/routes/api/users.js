@@ -64,5 +64,22 @@ router.post('/user/signin', function(req, res, next) {
 // PUT ./api/user/update
 
 // DELETE ./api/user/delete
+router.delete('/user/:email', function(req, res) {
+    User.findOneAndRemove({
+        email: req.params.email
+    }, function(err, user) {
+        if (err)
+            return res.json({
+                error: "Error deleting user",
+                error: err
+            });
+        if (!user)
+            return res.json({
+                error: "Error finding user",
+                error: "Error finding " + req.params.email + "\n"
+            });
+        res.json({info: 'user removed successfully'})
+    })
+})
 
 module.exports = router
