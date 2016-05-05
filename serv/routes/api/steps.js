@@ -44,12 +44,12 @@ router.put('/step/:_id', function(req, res) {
     }, function(err, step) {
         if (err)
             return res.json({
-                error: "Error fetching steps",
+                error: "Error fetching step",
                 error: err
             });
         else if (!step)
             return res.json({
-                error: "Error finding steps",
+                error: "Error finding step",
                 error: err
             });
         //res.send(step);

@@ -1,6 +1,7 @@
 var router = require('express').Router()
-var jwt     = require('jsonwebtoken')
-var bcrypt  = require('bcrypt')
+var jwt = require('jsonwebtoken')
+var bcrypt = require('bcrypt')
+var _ = require('lodash')
 
 var config = require('../../../config')
 var User = require('../../models/user').User
@@ -61,7 +62,36 @@ router.post('/user/signin', function(req, res, next) {
 })
 
 // Update account, profile
-// PUT ./api/user/update
+// PUT ./api/user/:email
+router.put('/user/:email', function(req, res) {
+    User.findOne({
+        email: req.params.email
+    }, function(err, user) {
+        if (err)
+            return res.json({
+                error: "Error fetching user",
+                error: err
+            });
+        else if (!user)
+            return res.json({
+                error: "Error finding users",
+                error: err
+            });
+        //res.send(user);
+        _.merge(user, req.body)
+        user.save(function(err, result) {
+            if (err)
+                return res.json({
+                    error: err
+                });
+            res.json({
+                message: "Successfully updated user",
+                user: result
+            })
+        })
+    })
+})
+
 
 // DELETE ./api/user/delete
 router.delete('/user/:email', function(req, res) {
